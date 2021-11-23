@@ -31,6 +31,14 @@ class Person{
   }
 }
 
+class X{
+  final name;
+  static const int age = 10;
+
+  X(this.name);
+}
+
+
 void main() {
   Person person1 = Person("Collins");
   person1.showOutput();
