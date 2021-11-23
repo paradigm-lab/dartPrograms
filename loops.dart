@@ -32,6 +32,23 @@ void main() {
 
   numbers.forEach( printNum );
 
+  print("");
+
+  // While loop
+  int num = 5;
+
+  while (num > 0) {
+    print(num);
+    num -= 1;
+  }
+
+  print("");
+
+  // Do-While loop
+  do {
+    print(num);
+    num++;
+  } while (num < 5);
 }
 
 void printNum(num){
