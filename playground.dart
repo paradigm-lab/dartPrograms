@@ -1,3 +1,5 @@
+//This library is automatically imported so we don't need to import
+import "dart:core";
 
 void main() {
 
