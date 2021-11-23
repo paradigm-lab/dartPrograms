@@ -19,4 +19,7 @@ main() {
   print(aConstBool.runtimeType);
   print(aConstString.runtimeType);
 
+  // When we don't assign any value so this will contain the null object
+  var num;
+  print(num);
 }
