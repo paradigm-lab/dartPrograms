@@ -1,0 +1,10 @@
+Fundamental of the dart programming.
+    -> Static Type
+    -> Compiled
+
+Dart support two types of compilation:
+    -> AOT
+    -> JIT (Just in Time compilation)
+
+The dart programming it is been compiled at the fly and this is JIT compile during development.
+When we deploy our final product then it will be compiled as AOT Compile deployment
