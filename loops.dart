@@ -59,7 +59,17 @@ void main() {
       }
       print(i);
   }
-  print("Out of the loop.");
+  print("Out of the loop. \n \n");
+
+  // A program to print the odd number using the loop and the continue keyword
+  // The continue keyword it changes the variable by moving the variable into the next iteration
+  for (var i = 0; i < 10; i++) {
+    if (i % 2 == 0) {
+      continue;
+    }
+    print("Odd: $i");
+  }
+
 }
 
 void printNum(num){
