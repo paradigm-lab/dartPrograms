@@ -44,4 +44,7 @@ main() {
   weakVariable = "Dart Programming";
   print("WeakVariable 2: $weakVariable \n");
 
+  weakVariable = null;
+  print(weakVariable);
+
 }
