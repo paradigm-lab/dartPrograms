@@ -49,6 +49,17 @@ void main() {
     print(num);
     num++;
   } while (num < 5);
+
+  print("");
+
+  // Terminate into the loop we use the break keyword (BREAK)
+  for (var i = 0; i < 10; i++) {
+      if (i > 5) {
+        break;
+      }
+      print(i);
+  }
+  print("Out of the loop.");
 }
 
 void printNum(num){
