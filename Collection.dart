@@ -71,4 +71,37 @@ void main() {
   // The other way of defining the hashset is by using the set class
   Set <String> names = {};
   print(names.runtimeType);
+
+  print("");
+
+  // Map it is unordered collection of the value and key pair items
+
+  var gifts = {
+    // Key:   Value
+    "First":  "Partridge",
+    "second": "turtledoves",
+    "fifth": "golden rings",
+  };
+
+  var bestMovies = {
+    //Key:   Value
+      2:    "The black jack",
+      1:    "Home Alone",
+      3:    "Black hat"
+  };
+
+  // Defining an empty map
+  // We are creating the map object by using the Map class
+  var phones = Map();
+  phones['first'] = 'Tecno';
+
+  print(phones["first"]);
+  print(gifts["First"]);
+  print(bestMovies[2]);
+
+  var laptop = {"HP": "China", "Mac Book": "USA", "Lenovo": "Russia"};
+  print(laptop["HP"]);
+
+
+
 }
