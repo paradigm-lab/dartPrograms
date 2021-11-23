@@ -32,8 +32,20 @@ class Person{
 }
 
 class X{
-  final name;
-  static const int age = 10;
+  // When we want to define the property as the constant then we use the final keyword
+  // And when we assign the value using the default contractor we can't change the value the second time
+
+  // We have to ways when we want to define the property or the variable
+  // as the constant the first is by using the final and the second is
+  // by using the const keyword
+
+  // But when we Use the const keyword that is the compile type constant and
+  // Finale is for the runtime constant.
+  final name;   // This is called the object property because this name is different for the different object
+
+  // This is the compile type constant so we need to use the class name to
+  // access the age property
+  static const int age = 10;  // This is called class property and, This is same for all the object or all instance
 
   X(this.name);
 }
@@ -50,4 +62,17 @@ void main() {
 
   var person3 = Person.guest();
   person3.showOutput();
+
+
+  // We can see here that the x and y object is different but
+  // the age property is base on class
+  // So we have to access the age property using the
+  // class name . property. and this is same for all the instance.
+  var x = X("Jack");
+  print(x.name);
+
+  print(X.age);
+
+  var y = X("Jill");
+  print(y.name);
 }
