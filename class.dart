@@ -50,7 +50,6 @@ class X{
   X(this.name);
 }
 
-
 void main() {
   Person person1 = Person("Collins");
   person1.showOutput();
@@ -75,4 +74,12 @@ void main() {
 
   var y = X("Jill");
   print(y.name);
+
+
+  print("");
+
+  // Out of the class for the final and const both are the same they is no difference
+  final name = "Mahmud";
+  const age = 30;
+  print("The name is $name and his age is $age");
 }
