@@ -38,19 +38,30 @@ void main() {
   */
 
 
-  // We a not copying the values from one list to another this are
+  // We a not copying the values from one list to another but the list
+  // variable are pointing to the same location in the memory or
   // the same type which point into one reference
 
   // We can also use the three dots and the list name to
   // assign the list into the other list
   // This is available in dart 2.3
+  // Using the spread operator
   var coreList = [...language];
 
-  /*
+  // When we use the spread operator
+  // We can't change values at the list
+
+  language[1] = "Python";
+
   for (var i in coreList) {
     print(i);
   }
-  */
+
+  print('');
+
+
+
+
 
   // Set is unordered collection of unique items.
   // set literal and the set type
@@ -73,6 +84,9 @@ void main() {
   print(names.runtimeType);
 
   print("");
+
+
+
 
   // Map it is unordered collection of the value and key pair items
 
