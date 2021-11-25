@@ -17,12 +17,17 @@ main (){
   //String -> double
   var onePointOne = double.parse('1.1');
   assert(onePointOne == 1.1);
+  print(onePointOne);
 
   // int -> string
   String oneAsString = 1.toString();
   assert(oneAsString == '1');
+  oneAsString += "Collins";
+  print(oneAsString);
 
   // double -> String
+  // trim the decimal places using toStringAsFixed method
   String piAsString = 3.14159.toStringAsFixed(2);
   assert(piAsString == '3.14');
+  print(piAsString);
 }
