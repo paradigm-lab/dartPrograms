@@ -65,7 +65,7 @@ void main() {
 
   // Set is unordered collection of unique items.
   // set literal and the set type
-  var halogens = {"Fluorine", "Chlorine", "Fluorine"};
+  var halogens = {"Fluorine", "Chlorine"};
   for (var i in halogens) {
     print(i);
   }
