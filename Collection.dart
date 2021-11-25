@@ -19,11 +19,11 @@ void main() {
   // So that we can't change the list and the list will be constant
 
   List <String> language = ["Java", "golang", "C", "C++"];
-  /*
+
   for (var i = 0; i < language.length; i++) {
     print(language[i]);
   }
-  */
+
 
   print("");
 
