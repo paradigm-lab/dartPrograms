@@ -10,6 +10,10 @@ main (){
   //The build int assert function  to verify that 1 == 1
   assert(one == 1);
 
+  //Trying to add into the integer variable
+  one += 10;
+  print(one);
+
   //String -> double
   var onePointOne = double.parse('1.1');
   assert(onePointOne == 1.1);
