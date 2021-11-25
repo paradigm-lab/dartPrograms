@@ -31,6 +31,10 @@ void main() {
   print(sum1(10, num2: 2));
 }
 
+
+// We use the Arrow function when we have one statement
+// to execute within the function =>
+
 // here we are using positional argument
 dynamic sum(var num1, [var num2 = 0]) => num1 + (num2 ?? 0);
 
