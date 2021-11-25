@@ -31,6 +31,7 @@ void main() {
   print("");
 
   numbers.forEach( printNum );
+  numbers.forEach( (element) => printNum(element) );
 
   print("");
 
