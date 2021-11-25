@@ -21,6 +21,7 @@ void main() {
   }
 
   // We use the break key word to terminate or to get out of the switch case statement
+  // The break key word get the control out of the switch case statement
   number = 0;
   switch (number) {
     case 0:
