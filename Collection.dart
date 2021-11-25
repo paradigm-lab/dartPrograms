@@ -73,6 +73,10 @@ void main() {
   // Defining an empty set
   // When we don't add the type it will be the HashMap and
   // when use the type the it will be the HashSet
+        // REASON
+  // This is because the empty curly braces without
+  // the type this means it is a map but when we add
+  // the type that means it is a set
 
   var carType = <String> {};
   var boatType = {};
