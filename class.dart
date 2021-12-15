@@ -6,9 +6,9 @@ class Point{
   late int y;
 
   // Constructor is a special function that is used for initializing the data members in the class
-  Point() {
-    x = 10;
-    y = 0;
+  Point(int x, int y) {
+    this.x = x;
+    this.y = y;
   }
 
 }
@@ -67,8 +67,9 @@ class X{
 void main() {
 
 
-  Point p = Point();
+  Point p = Point(100, 200);
   print(p.x);
+  print(p.y);
 
 
   Person person1 = Person("Collins");
