@@ -1,5 +1,19 @@
 //Classes in dart
 
+
+class Point{
+  late int x;
+  late int y;
+
+  // Constructor is a special function that is used for initializing the data members in the class
+  Point() {
+    x = 10;
+    y = 0;
+  }
+
+}
+
+
 class Person{
   late String name;
   late int age;
@@ -51,6 +65,12 @@ class X{
 }
 
 void main() {
+
+
+  Point p = Point();
+  print(p.x);
+
+
   Person person1 = Person("Collins");
   person1.showOutput();
 
