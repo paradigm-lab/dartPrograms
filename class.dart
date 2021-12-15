@@ -8,6 +8,9 @@ class Point{
   // The simply way of creating a constructor that is provided by dart
   Point(this.x, this.y);
 
+  void printData() => print("$x $y");
+
+
   /*
   // Constructor is a special function that is used for initializing the data members in the class
   Point(int x, int y) {
@@ -75,6 +78,7 @@ void main() {
   Point p = Point(100, 200);
   print(p.x);
   print(p.y);
+  p.printData();
 
 
   Person person1 = Person("Collins");
