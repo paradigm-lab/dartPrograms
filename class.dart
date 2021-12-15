@@ -22,13 +22,12 @@ class Point{
   void printData() => print("$x $y");
 
 
-  /*
   // Constructor is a special function that is used for initializing the data members in the class
   Point(int x, int y) {
     this.x = x;
     this.y = y;
   }
-  */
+
 
 }
 
