@@ -34,6 +34,10 @@ class Point{
   int get pointX => this.x;
   int get pointY => this.y;
 
+  Map<String, int> get getMap => <String, int> {
+    'x': this.x, 'y': this.y,
+  };
+
 }
 
 
@@ -96,6 +100,7 @@ void main() {
   p.printData();
   print(p.pointX);
   print(p.pointY);
+  print(p.getMap);
 
   /*
   Point p1 = Point.fromMap({
