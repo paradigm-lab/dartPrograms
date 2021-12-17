@@ -5,10 +5,12 @@ class Point{
   late int x;
   late int y;
 
-
+/*
   Point.fromMap(Map<String, int> map) : x = map['x'], y = map['y'] {
     printData();
   }
+
+ */
 
   /*
   // The simply way of creating a constructor that is provided by dart
@@ -90,12 +92,13 @@ void main() {
   print(p.y);
   p.printData();
 
+  /*
   Point p1 = Point.fromMap({
     'x': 10,
     'y':20,
   });
   //p1.printData();
-
+  */
 
   Person person1 = Person("Collins");
   person1.showOutput();
