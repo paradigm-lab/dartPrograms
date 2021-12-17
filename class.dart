@@ -30,6 +30,8 @@ class Point{
     this.y = y;
   }
 
+  // getter and setters
+  int get pointX => this.x;
 
 }
 
@@ -91,6 +93,7 @@ void main() {
   print(p.x);
   print(p.y);
   p.printData();
+  print(p.pointX);
 
   /*
   Point p1 = Point.fromMap({
