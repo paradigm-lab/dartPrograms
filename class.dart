@@ -30,13 +30,16 @@ class Point{
     this.y = y;
   }
 
-  // getter and setters
+  // getter and setters --> get is a keyword in dart the is used in the get method
   int get pointX => this.x;
   int get pointY => this.y;
 
   Map<String, int> get getMap => <String, int> {
     'x': this.x, 'y': this.y,
   };
+
+  // Setters ---> We use the set keyword that is provided by dart to set the values into the field
+  set setX(int x) => this.x = x;
 
 }
 
@@ -101,6 +104,8 @@ void main() {
   print(p.pointX);
   print(p.pointY);
   print(p.getMap);
+  p.setX = 500;
+  p.printData();
 
   /*
   Point p1 = Point.fromMap({
