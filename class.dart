@@ -40,6 +40,7 @@ class Point{
 
   // Setters ---> We use the set keyword that is provided by dart to set the values into the field
   set setX(int x) => this.x = x;
+  set setY(int y) => this.y = y;
 
 }
 
@@ -105,6 +106,7 @@ void main() {
   print(p.pointY);
   print(p.getMap);
   p.setX = 500;
+  p.setY = 500;
   p.printData();
 
   /*
