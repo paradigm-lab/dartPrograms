@@ -1,3 +1,9 @@
+class AgeException implements Exception {
+  String errMsg() => "Age cannot be less than zero";
+}
+
+
+
 void main() {
   // Exception is a technical word used for the error
   // Exception handling is the process of handling the errors.
@@ -15,13 +21,18 @@ void main() {
     // It automatically converted to a double value.
     print(c);
 
-     */
+
 
     var s = [1, 3, 4];
     print(s[2]);
+    */
 
-  } on IntegerDivisionByZeroException catch (e){
-    print("Division by zero is not possible");
+   var a = -10;
+   if (a < 0) {
+     throw AgeException();
+   }
+
+
   } catch (e) {
     print("Another catch block");
   }
