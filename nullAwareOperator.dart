@@ -28,7 +28,7 @@ main() {
   }
   */
 
-  number = n?.num ?? 0;
+  number = n.num ?? 0;
 
   print(number);
 
