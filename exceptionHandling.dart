@@ -15,5 +15,7 @@ void main() {
     print(c);
   } on IntegerDivisionByZeroException {
     print("Division by zero is not possible");
+  } catch (e) {
+    print("Another catch block");
   }
 }
