@@ -13,7 +13,7 @@ void main() {
     // We get infinity this is because whenever we divide by zero
     // It automatically converted to a double value.
     print(c);
-  } catch(e) {
+  } on IntegerDivisionByZeroException {
     print("Division by zero is not possible");
   }
 }
