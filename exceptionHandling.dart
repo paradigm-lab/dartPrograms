@@ -18,11 +18,15 @@ void main() {
      */
 
     var s = [1, 3, 4];
-    print(s[3]);
+    print(s[2]);
 
-  } on IntegerDivisionByZeroException {
+  } on IntegerDivisionByZeroException catch (e){
     print("Division by zero is not possible");
   } catch (e) {
     print("Another catch block");
+  }
+  // It will always been executed
+  finally {
+    print("Always Executed");
   }
 }
