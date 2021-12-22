@@ -3,6 +3,7 @@ void main() {
   // Exception handling is the process of handling the errors.
 
   try {
+    /*
     // Division by 0
     var a = 10;
     var b = 0;
@@ -13,6 +14,12 @@ void main() {
     // We get infinity this is because whenever we divide by zero
     // It automatically converted to a double value.
     print(c);
+
+     */
+
+    var s = [1, 3, 4];
+    print(s[3]);
+
   } on IntegerDivisionByZeroException {
     print("Division by zero is not possible");
   } catch (e) {
