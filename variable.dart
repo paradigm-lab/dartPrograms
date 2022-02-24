@@ -1,19 +1,20 @@
 
 class Bicycle {
     late int cadence;
-    late int speed;
+    late int _speed = 10;
     late int gear;
 
     // Bicycle(this.cadence, this.speed, this.gear);
 
-    Bicycle(int cadence, int speed, int gear) {
+    Bicycle(int cadence, int gear) {
         this.cadence = cadence;
-        this.speed = speed;
         this.gear = gear;
     }
 
+    int get speed => _speed;
+
     @override
-    String toString() => 'Bicycle{cadence: ${cadence}, speed: ${speed + 10}, gear: ${gear}}';
+    String toString() => 'Bicycle{cadence: ${cadence}, Speed: ${speed} gear: ${gear}}';
 
 }
 
@@ -37,6 +38,11 @@ void main() {
 
 
   // Creating an instance of the Bicycle class
-    var bike = new Bicycle(10, 120, 12);
-    print(bike);
+    final bike = new Bicycle(10, 120);
+    try {
+        print(bike);
+    } catch(e) {
+        print(e);
+    }
+
 }
