@@ -1,4 +1,6 @@
 
+import 'dart:io';
+
 class Bicycle {
     late int cadence;
     late int _speed = 10;
@@ -44,5 +46,31 @@ void main() {
     } catch(e) {
         print(e);
     }
+    print("Enter your name?");
+    // Reading name of the Geek
+    String? name = stdin.readLineSync();
 
+    // Printing the name
+    print("Hello, $name! \nWelcome to Paradigm");
+
+    stdout.write("What is your name?\r\n");
+    var userName = stdin.readLineSync();
+    print(userName);
+
+    var s;
+    if (s != null){
+        int n = int.parse(s);
+        print(n); // Or do whatever you want with your n value
+    }
+
+
+    // Asking for favourite number
+    print("Enter your favourite number:");
+
+    // Scanning number
+    int? n = int.parse(stdin.readLineSync()!);
+    // Here ? and ! are for null safety
+
+    // Printing that number
+    print("Your favourite number is $n");
 }
