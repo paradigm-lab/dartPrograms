@@ -1,7 +1,7 @@
 // Asynchronous operation lets you program keep running will waiting for another operation to finish.
 
 Future<String> fetchUserData() {
-  return Future.delayed(Duration(seconds: 2), () => "Data");
+  return Future.delayed(Duration(seconds: 1), () => "Data");
 }
 
 Future<String> userMsg() async {
@@ -24,4 +24,5 @@ void main() async {
 
   //fetchUserData();
   print(await userMsg());
+  print("Spring Framework");
 }
